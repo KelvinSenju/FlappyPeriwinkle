@@ -1,0 +1,57 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+#board {
+    background-image: url("./flappybirdbg.png");
+    margin: 0 auto;
+}
+
+.messageBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 400px;
+}
+
+.messageText {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.nextBtn, .askOutBtn {
+    display: block;
+    margin: 10px auto; /* Center the button */
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nextBtn:hover, .askOutBtn:hover {
+    background-color: #ffb84d;
+}
